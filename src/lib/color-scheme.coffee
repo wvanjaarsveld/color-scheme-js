@@ -44,10 +44,10 @@ class ColorScheme
     345 : [ 229, 0,   102, 90 ]
 
   constructor: (options) ->
-    options = options || {}
     colors = []
     colors.push(new ColorScheme.mutablecolor(60)) for [1..4]
 
+    @options = options || {}
     @col = colors
     @_scheme = 'mono'
     @_distance = 0.5
@@ -484,7 +484,7 @@ class ColorScheme
 
         formatted += str
 
-      if options.includeHash
+      if @options.includeHash
         return '#' + formatted
       return formatted
 
