@@ -1,7 +1,7 @@
 {
-  "name": "color-scheme",
-  "version": "0.0.5",
-  "description": "Generate pleasant color schemes",
+  "name": "color-schemer",
+  "version": "1.0.0",
+  "description": "Generate pleasant color schemes (Thanks Brian Hann)",
   "main": "lib/color-scheme.js",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/c0bra/color-scheme-js.git"
+    "url": "https://github.com/wvanjaarsveld/color-scheme-js.git"
   },
   "bugs": {
-    "url": "https://github.com/c0bra/color-scheme-js/issues"
+    "url": "https://github.com/wvanjaarsveld/color-scheme-js/issues"
   },
   "keywords": [
     "color",
@@ -22,7 +22,7 @@
     "picker",
     "web"
   ],
-  "author": "Brian Hann",
+  "author": "W van Jaarsveld (originally Brian Hann)",
   "license": "BSD",
   "dependencies": {},
   "devDependencies": {
