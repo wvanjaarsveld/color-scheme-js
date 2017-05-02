@@ -43,7 +43,8 @@ class ColorScheme
     330 : [ 204, 0,   153, 80 ]
     345 : [ 229, 0,   102, 90 ]
 
-  constructor: () ->
+  constructor: (options) ->
+    options = options || {}
     colors = []
     colors.push(new ColorScheme.mutablecolor(60)) for [1..4]
 
@@ -483,7 +484,8 @@ class ColorScheme
 
         formatted += str
 
-
+      if options.includeHash
+        return '#' + formatted
       return formatted
 
 if module? and module.exports?
