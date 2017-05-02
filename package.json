@@ -1,5 +1,5 @@
 {
-  "name": "color-schemer",
+  "name": "color-scheme-js",
   "version": "1.0.0",
   "description": "Generate pleasant color schemes (Thanks Brian Hann)",
   "main": "lib/color-scheme.js",
