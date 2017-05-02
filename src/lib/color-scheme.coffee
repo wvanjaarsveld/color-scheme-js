@@ -128,7 +128,7 @@ class ColorScheme
 
     for i in [0 .. used_colors - 1]
       for j in [0..3]
-        output[i * 4 + j] = @col[i].get_hex(@_web_safe, j)
+        output[i * 4 + j] = (@options.includeHash ? '#':'') + @col[i].get_hex(@_web_safe, j)
 
     return output
 
@@ -484,8 +484,6 @@ class ColorScheme
 
         formatted += str
 
-      if @options.includeHash
-        return '#' + formatted
       return formatted
 
 if module? and module.exports?
